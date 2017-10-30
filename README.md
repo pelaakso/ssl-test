@@ -13,5 +13,9 @@ Aja:
 
 `java -cp commons-io-2.4.jar:. CopyUrlToFile https://... dump.xml`
 
+Saat enemmän lokitusta antamalla `-Djavax.net.debug=taso`, missä taso on `all` tai `ssl`. Tasolla `all` tulee sitten kaikki verkkoliikenne, joten harkitse sen käyttämistä ison tiedoston yhteydessä.
+
+`java -Djavax.net.debug=ssl -cp commons-io-2.4.jar:. CopyUrlToFile https://... dump.xml`
+
 Tässä repossa oleva `CopyUrlToFile.class` käännetty Java7:lla.
 
